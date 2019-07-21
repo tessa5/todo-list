@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Header from './components/Header';
+import Duedate from './components/Duedate';
 import AddTask from './components/AddTask';
 import TodoItem from './components/TodoItem';
 import uuid from 'uuid';
@@ -35,7 +36,7 @@ class App extends Component {
     this.setState({
       todos: this.state.todos.map(todo => {
         if(todo.id ===id){
-          todo.Completed = !todo.completed
+          todo.Completed = !todo.Completed
         }
         return todo;
       })
@@ -60,6 +61,7 @@ class App extends Component {
       <div>
         <div className="Container">
         <Header/>
+        <Duedate/>
         <AddTask addTodo={this.addTodo}/>
         <
           TodoItem todos={this.state.todos} 

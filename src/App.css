@@ -25,6 +25,9 @@ input {
   width:20px;
   margin-top:7px;
 }
+.date {
+  float:right;
+}
 p{
   height:39px;
   line-height:38px;
