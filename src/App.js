@@ -13,7 +13,7 @@ class App extends Component {
       {
         id:uuid.v4(),
         title:'take out the trash',
-        Completed: true
+        Completed: false
       },
       {
         id:uuid.v4(),
@@ -23,7 +23,7 @@ class App extends Component {
       {
         id:uuid.v4(),
         title:'tea time with Tee',
-        Completed: true
+        Completed: false
       },
       {
         id:uuid.v4(),
