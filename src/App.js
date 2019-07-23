@@ -18,7 +18,7 @@ class App extends Component {
       {
         id:uuid.v4(),
         title:'walk the dog',
-        Completed: false
+        Completed: true
       },
       {
         id:uuid.v4(),

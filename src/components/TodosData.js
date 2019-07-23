@@ -5,7 +5,7 @@ export class TodosData extends Component {
     getStyle = () => {
         if(this.props.todo.Completed) {
             return {
-                textDecoration:'line-through'
+                textDecoration:'line-through',
             }
         } else {
             return{
@@ -22,6 +22,7 @@ export class TodosData extends Component {
                 <p>
                     <
                         input type="checkbox" 
+                        checked = {this.props.todo.Completed}
                         onChange={this.props.toggleComplete.bind(this, id)}
                     />
                         {title}
