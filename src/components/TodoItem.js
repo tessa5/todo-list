@@ -10,6 +10,7 @@ class TodoItem extends Component {
                 TodosData key={todo.id} 
                 todo={todo}
                 toggleComplete={this.props.toggleComplete}
+                assignTo = {this.props.assignTo}
                 delButton = {this.props.delButton}
             />
         ));

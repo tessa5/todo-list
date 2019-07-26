@@ -19,15 +19,25 @@ export class TodosData extends Component {
 
         return(
             <div style={this.getStyle()}>
-                <p>
+                <div className="p">
                     <
                         input type="checkbox" 
                         checked = {this.props.todo.Completed}
                         onChange={this.props.toggleComplete.bind(this, id)}
                     />
-                        {title}
+                        <p>{title}</p>
+                        <select 
+                            onChange={this.props.assignTo.bind(this.id)}
+                            name="Assign to:"
+                            >
+                                <option value="">Assign to..</option>
+                                <option value="teresa">Teresa</option>
+                                <option value="candy">Candy</option>
+                                <option value="ortiz">Ortiz</option>
+                                <option value="jesus">Jesus</option>
+                        </select>
                         <button onClick={this.props.delButton.bind(this, id)}>X</button>
-                </p>
+                </div>
             </div>
         );
     }

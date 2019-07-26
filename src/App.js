@@ -42,6 +42,13 @@ class App extends Component {
       })
     })
   }
+
+  assignTo = (id) => {
+    this.setState({
+      todos: this.state.todos
+    })
+  }
+
   delButton = (id) => {
     this.setState({ todos: [...this.state.todos.filter(todo => todo.id !== id)]});
   }
@@ -66,6 +73,7 @@ class App extends Component {
         <
           TodoItem todos={this.state.todos} 
           toggleComplete={this.toggleComplete}
+          assignTo ={this.assignTo}
           delButton={this.delButton}
         />
         </div>
